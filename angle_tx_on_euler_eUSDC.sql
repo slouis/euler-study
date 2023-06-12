@@ -28,7 +28,5 @@ WHERE
     OR "to" = myConstants.angleContract
   )
   -- Remove the technical transactions done by Euler dispatcher --
-  AND (
-    "from" <> myConstants.eulerDispatcher
-    OR "to"<> myConstants.eulerDispatcher
-  )
+  AND "from" <> myConstants.eulerDispatcher
+  AND "to"<> myConstants.eulerDispatcher
