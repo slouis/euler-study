@@ -24,7 +24,5 @@ WHERE
     OR "to" = 0xf5ad02f3dbbf4b42dee1f1255607f929ca2a7c5a
   )
   -- Remove the technical transactions done by Euler dispatcher --
-  AND (
-    "from" <> 0xe5afe81e63f0a52a3a03b922b30f73b8ce74d570
-    OR "to"<> 0xe5afe81e63f0a52a3a03b922b30f73b8ce74d570
-  )
+  AND "from" <> 0xe5afe81e63f0a52a3a03b922b30f73b8ce74d570
+  AND "to" <> 0xe5afe81e63f0a52a3a03b922b30f73b8ce74d570
